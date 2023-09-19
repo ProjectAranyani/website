@@ -46,6 +46,6 @@ body {
   color: beige;
 }
 
-.section:nth-child(odd) {
+/* .section:nth-child(odd) {
   background-color: #1005e448;
-}
+} */
