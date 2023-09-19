@@ -21,6 +21,11 @@ bun.lockb
 .env.production
 .env.local
 
+# bun
+bun.lockb
+
+# package lock
+package-lock.json
 
 # Editor directories and files
 .vscode/*
