@@ -4,24 +4,82 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,100&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Project Aranyani</title>
   </head>
   <body>
-    <canvas id="rive" class="rive" width="100vw" height="100vh"></canvas>
-    <section class="section">
-      What we do?
-    </section>
-    <section class="section">
-      How We Do it?
-    </section>
-    <section class="section">
-      Your Support
-    </section>
-    <section class="section">
-      Our Team
-    </section>
+    <div class="overlay">
+      <div class="nav">
+      </div>
+    </div>
 
+    <!-- <canvas id="rive" class="rive" width="100vw" height="100vh"></canvas> -->
+    <nav>
+
+      <a href=""><img src="logo 1.png" alt=""></a>
+
+      <div class="nav-links" id="navLinks">
+        <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="#s1">WHAT WE DO?</a></li>
+          <li><a href="#s2">HOW WE DO IT ?</a></li>
+          <li><a href="#s3">YOUR SUPPORT</a></li>
+          <li><a href="#s4">OUR TEAM</a></li>
+        </ul>
+      </div>
+      <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <section class="heading">
+      
+      <img src="21.png" alt="">
+
+      <div class="heading-lines">
+        <div class="head">
+          <h1>Project</h1>
+          <h1> Aranyani</h1>
+        </div>
+        Our goal is to make you care more about our beloved planet.
+      </div>
+    </section>
+    
+
+
+    <section class="section" id="s1" >
+      <h2>What we do?</h2>
+      <div class="content">
+        We are a dedicated team committed to making a positive impact on our planet through sustainable living practices. Our mission is to inspire and empower individuals to adopt eco-friendly habits and contribute to a greener future.We believe that every small action counts, which is why we encourage practices like avoiding single-use cutlery when ordering food and promoting sustainable transportation choices such as walking or using public transport.
+      </div>
+    </section>
+    <section class="section" id="s2">
+      <!-- <h2>How We Do it?</h2> -->
+      <div class="svg">
+        <img src="flow1.svg" alt="">
+      </div>
+    </section>
+    <section class="section" id="s3">
+      <h2>Your Support</h2>
+    </section>
+    <section class="section" id="s4">
+      <h2>Our Team</h2>
+    </section>
+    <canvas id="rive" class="rive" width="100vw" height="100vh"></canvas>
     <script src="https://unpkg.com/@rive-app/canvas@2.1.0"></script>
     <script type="module" src="/src/js/main.js"></script>
+
+    <!-- ToggleMenu JavaScript==================== -->
+    <script>
+      var navLinks= document.getElementById("navLinks");
+
+      function showMenu(){
+        navLinks.style.right="0px"; 
+      }
+      function hideMenu(){
+        navLinks.style.right="-250px"; 
+      }
+
+    </script>
   </body>
 </html>
